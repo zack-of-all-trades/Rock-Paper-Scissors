@@ -14,12 +14,41 @@ h6 {
   text-align: center;
   font-size: 15px;
   color:rgb(154, 54, 248);
-  margin-top: 5px;
+  padding: 5px 0px 0px 0px;
+  margin: 0;
 }
 
-.buttons {
+.score {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
+  padding: 10px 10px 0px 10px;
+  font-size: 20px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.ps, .cs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+.box1 {
+  height: 30px;
+  width: 60px;
+}
+
+.container2, .container3, .container4 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;  
 }
 
 button {
@@ -31,4 +60,27 @@ button {
   border:ridge;
   border-color: rgb(236, 236, 79);
   margin: 0px 20px;
+  width: 130px;
+}
+
+.pc, .cc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+.box2 {
+  height: 80px;
+  width: 160px;
+}
+
+.btmText {  
+  color: #bb6912;
+  font-size: 30px;
+  padding-top: 10px;
+  height: 50px;
+  width: auto;
 }

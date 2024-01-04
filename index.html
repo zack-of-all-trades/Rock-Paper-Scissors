@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css"></link>
-    <script src="script.js"></script>
   </head>
-
+  
   <body>
+
     <h1>Rock Paper Scissors</h1>
-
+    
     <h6>Against the Computer!</h6>
+    
+    <div class="score"><u>Score</u></div>
 
-    <div class="buttons">
+    <div class="container1">
+      <div class=ps >Player<label class="box1" id="pScore"></label></div> 
+      <div class=cs>Computer<label class="box1" id="cScore"></label></div>
+    </div>
+
+    <div class="container2">
       <button id="rock">Rock</button>
       <button id="paper">Paper</button>
       <button id="scissors">Scissors</button>
     </div>
+
+    <div class="container3">
+      <div class="pc">Players Choice<label class="box2" id="player"></label></div>
+      <div class="cc">Computers Choice<label class="box2" id="computer"></label></div>
+    </div>
     
+    <div class="container4">
+      <label class=btmText id="winner"></label>
+    </div>
+
+    <script src="script.js"></script>
   </body>
+
 </html>
