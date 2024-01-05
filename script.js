@@ -6,7 +6,7 @@ const scissors = document.getElementById('scissors');
 const pChoice = document.getElementById('pChoice');
 const cChoice = document.getElementById('cChoice');
 const winLoseWords = document.getElementById('winner');
-let choices = ['Rock', 'Paper', 'Scissors'];
+const choices = ['Rock', 'Paper', 'Scissors'];
 let pCount = 1;
 let cCount = 1;
 
