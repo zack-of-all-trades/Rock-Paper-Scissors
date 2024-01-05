@@ -6,9 +6,11 @@ const scissors = document.getElementById('scissors');
 const pChoice = document.getElementById('pChoice');
 const cChoice = document.getElementById('cChoice');
 const winLoseWords = document.getElementById('winner');
+const reset = document.getElementById('reset');
 const choices = ['Rock', 'Paper', 'Scissors'];
 let pCount = 1;
 let cCount = 1;
+let plCoReset = 0;
 
 rock.onclick = function(){
   let getComputerChoice = choices[Math.floor(Math.random() * 3)];
@@ -83,6 +85,13 @@ scissors.onclick = function(){
     result = 'error';
     winLoseWords.textContent = result;
   }
+}
+
+reset.onclick = function(){
+  pCount = 0;
+  cCount = 0;
+  pScore.textContent = plCoReset;
+  cScore.textContent = plCoReset;
 }
 
 /* The below is a test because the above wasn't working 
