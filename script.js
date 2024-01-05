@@ -3,17 +3,17 @@ const computerScore = document.getElementById('cScore');
 const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
-const playersChoice = document.getElementById('pChoice');
-const computersChoice = document.getElementById('cChoice');
+const pChoice = document.getElementById('pChoice');
+const cChoice = document.getElementById('cChoice');
 const winningWords = document.getElementById('winner');
-
 let choices = ['Rock', 'Paper', 'Scissors'];
-let getComputerChoice = choices[Math.floor(Math.random() * 3)];
+
 
 rock.onclick = function(){
-  playersChoice.textContent = 'Rock';
-  computersChoice.textContent = getComputerChoice;
-  console.log(getComputerChoice);
+  let getComputerChoice = choices[Math.floor(Math.random() * 3)];
+  pChoice.textContent = 'Rock';
+  cChoice.textContent = getComputerChoice;
+  
   if(getComputerChoice === 'Rock'){
     result = 'It is a Tie! Try again.';
     winningWords.textContent = result;
@@ -30,8 +30,9 @@ rock.onclick = function(){
 }
 
 paper.onclick = function(){
-  playersChoice.textContent = 'Paper';
-  computersChoice.textContent = getComputerChoice;
+  let getComputerChoice = choices[Math.floor(Math.random() * 3)];
+  pChoice.textContent = 'Paper';
+  cChoice.textContent = getComputerChoice;
 
   if(getComputerChoice === 'Paper'){
     result = 'It is a Tie! Try again.';
@@ -49,8 +50,9 @@ paper.onclick = function(){
 }
 
 scissors.onclick = function(){
-  playersChoice.textContent = 'Scissors';
-  computersChoice.textContent = getComputerChoice;
+  let getComputerChoice = choices[Math.floor(Math.random() * 3)];
+  pChoice.textContent = 'Scissors';
+  cChoice.textContent = getComputerChoice;
 
   if(getComputerChoice === 'Scissors'){
     result = 'It is a Tie! Try again.';
@@ -69,12 +71,12 @@ scissors.onclick = function(){
 
 /* The below is a test because the above wasn't working 
 
-The Below works!
+It Works...had "const stuff" line in wrong spot!
 
-const tests = ['Blood', 'Boogers', 'Toe Jam'];
-const stuff = tests[Math.floor(Math.random() * 3)];
+const tests = ["Blood", "Boogers", "Toe Jam"];
 
 testing.onclick = function(){
+  const stuff = tests[Math.floor(Math.random() * 3)];
   if(stuff === 'Blood'){
     play = 'It is a TIE';
     console.log(play);
@@ -88,4 +90,5 @@ testing.onclick = function(){
     play = 'error';
     console.log(play);
   } 
-} */
+}
+*/
