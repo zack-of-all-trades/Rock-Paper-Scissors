@@ -13,7 +13,7 @@ h1 {
 h6 {
   text-align: center;
   font-size: 15px;
-  color:rgb(0, 0, 0);
+  color: rgb(19, 19, 19);
   padding: 5px 0px 0px 0px;
   margin: 0;
 }
@@ -39,11 +39,17 @@ h6 {
   width: 70px;
   padding: 0px 10px;
   font-size: 18px;
+  color: rgb(19, 19, 19);
 }
 
 .box1 {
   height: 30px;
   width: 60px;
+  text-align: center;
+  padding-top: 5px;
+  border: ridge;
+  border-radius: 10px;
+  background-color: antiquewhite;
 }
 
 .container2, .container3, .container4 {
@@ -74,20 +80,25 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160px;
-  padding: 0px 10px;
-  font-size: 18px;
+  width: 170px;
+  padding: 0px;
+  font-size: 20px;
+  color: rgb(19, 19, 19);
 }
 
 .box2 {
   height: 80px;
   width: 160px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 40px;
+  color: hsl(0, 56%, 52%);
 }
 
 .btmText {  
-  color: #bb6912;
-  font-size: 30px;
+  color: #ffcc00;
+  font-size: 40px;
   padding-top: 10px;
-  height: 50px;
+  height: 60px;
   width: auto;
 }
