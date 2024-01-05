@@ -7,7 +7,8 @@ const pChoice = document.getElementById('pChoice');
 const cChoice = document.getElementById('cChoice');
 const winLoseWords = document.getElementById('winner');
 let choices = ['Rock', 'Paper', 'Scissors'];
-let score = 0;
+let pCount = 1;
+let cCount = 1;
 
 rock.onclick = function(){
   let getComputerChoice = choices[Math.floor(Math.random() * 3)];
@@ -21,12 +22,12 @@ rock.onclick = function(){
   }else if(getComputerChoice === 'Paper') {
     result = 'Paper beats Rock. You Loose.';
     winLoseWords.textContent = result;
-    cScore.textContent = score++;
+    cScore.textContent = cCount++;
 
   }else if(getComputerChoice === 'Scissors'){
     result = 'Rock beats Scissors. You Win!';
     winLoseWords.textContent = result;
-    pScore.textContent = score++;
+    pScore.textContent = pCount++;
 
   }else{
     result = 'error';
@@ -46,13 +47,13 @@ paper.onclick = function(){
   }else if(getComputerChoice === 'Scissors') {
     result = 'Scissors beat Paper. You Loose.';
     winLoseWords.textContent = result;
-    cScore.textContent = score++;
+    cScore.textContent = cCount++;
 
   }else if(getComputerChoice === 'Rock'){
     result = 'Paper beats Rock. You Win!';
     winLoseWords.textContent = result;
-    pScore.textContent = score++;
-    
+    pScore.textContent = pCount++;
+
   }else{
     result = 'error';
     winLoseWords.textContent = result;
@@ -71,12 +72,12 @@ scissors.onclick = function(){
   }else if(getComputerChoice === 'Rock') {
     result = 'Rock beats Scissors. You Loose.';
     winLoseWords.textContent = result;
-    cScore.textContent = score++;
+    cScore.textContent = cCount++;
 
   }else if(getComputerChoice === 'Paper'){
     result = 'Scissors beats Paper. You Win!';
     winLoseWords.textContent = result;
-    pScore.textContent = score++;
+    pScore.textContent = pCount++;
 
   }else{
     result = 'error';
