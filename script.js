@@ -1,13 +1,13 @@
-const playerScore = document.getElementById('pScore');
-const computerScore = document.getElementById('cScore');
+const pScore = document.getElementById('pScore');
+const cScore = document.getElementById('cScore');
 const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
 const pChoice = document.getElementById('pChoice');
 const cChoice = document.getElementById('cChoice');
-const winningWords = document.getElementById('winner');
+const winLoseWords = document.getElementById('winner');
 let choices = ['Rock', 'Paper', 'Scissors'];
-
+let score = 0;
 
 rock.onclick = function(){
   let getComputerChoice = choices[Math.floor(Math.random() * 3)];
@@ -16,16 +16,21 @@ rock.onclick = function(){
   
   if(getComputerChoice === 'Rock'){
     result = 'It is a Tie! Try again.';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+
   }else if(getComputerChoice === 'Paper') {
     result = 'Paper beats Rock. You Loose.';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+    cScore.textContent = score++;
+
   }else if(getComputerChoice === 'Scissors'){
     result = 'Rock beats Scissors. You Win!';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+    pScore.textContent = score++;
+
   }else{
     result = 'error';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
   }
 }
 
@@ -36,16 +41,21 @@ paper.onclick = function(){
 
   if(getComputerChoice === 'Paper'){
     result = 'It is a Tie! Try again.';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+
   }else if(getComputerChoice === 'Scissors') {
     result = 'Scissors beat Paper. You Loose.';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+    cScore.textContent = score++;
+
   }else if(getComputerChoice === 'Rock'){
     result = 'Paper beats Rock. You Win!';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+    pScore.textContent = score++;
+    
   }else{
     result = 'error';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
   }  
 }
 
@@ -56,22 +66,27 @@ scissors.onclick = function(){
 
   if(getComputerChoice === 'Scissors'){
     result = 'It is a Tie! Try again.';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+
   }else if(getComputerChoice === 'Rock') {
     result = 'Rock beats Scissors. You Loose.';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+    cScore.textContent = score++;
+
   }else if(getComputerChoice === 'Paper'){
     result = 'Scissors beats Paper. You Win!';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
+    pScore.textContent = score++;
+
   }else{
     result = 'error';
-    winningWords.textContent = result;
+    winLoseWords.textContent = result;
   }
 }
 
 /* The below is a test because the above wasn't working 
 
-It Works...had "const stuff" line in wrong spot!
+It Works...had "const stuff" line in wrong spot!..under "const tests"
 
 const tests = ["Blood", "Boogers", "Toe Jam"];
 
