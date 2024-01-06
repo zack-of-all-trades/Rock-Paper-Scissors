@@ -88,10 +88,11 @@ scissors.onclick = function(){
 }
 
 reset.onclick = function(){
-  pCount = 0;
-  cCount = 0;
+  pCount = 1;
+  cCount = 1;
   pScore.textContent = plCoReset;
   cScore.textContent = plCoReset;
+  winLoseWords.textContent = '';
 }
 
 /* The below is a test because the above wasn't working 
